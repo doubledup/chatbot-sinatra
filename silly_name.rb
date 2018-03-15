@@ -13,7 +13,7 @@ class SillyName < Sinatra::Base
     colour = df_params['colour']
     number = df_params['number']
 
-    make_response(%Q(Your silly name is #{colour}-#{number}. Congrats!))
+    make_response(%Q(Your silly name is `#{colour}-#{number}`. Congrats!))
   end
 
   private
